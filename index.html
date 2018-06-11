@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Top 10 News</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;maximum-scale=1.0;">
+	<script src="js/jQuery3.2.1.js"></script>
 	<style type="text/css">
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -34,16 +36,19 @@
 	.right_panel{width: 87px;}
 	.content_share{float: left;width:24px;height:27px;background: url(img/share_icon.png) no-repeat;cursor: pointer;}
 	.content_bookmark{float: right;width:25px;height:32px;background: url(img/bookmark.png) no-repeat;cursor: pointer;}
-	.news_desc{overflow:hidden;word-wrap: break-word;font-size: 20px;line-height: 25px;max-height: 50px;color: #333;margin: 10px 0;padding-right: 65px;}
+	.news_desc{overflow:hidden;word-wrap: break-word;font-size: 20px;line-height: 25px;color: #333;margin: 10px 0;padding-right: 65px;}
 	.view_more{font-size: 18px;line-height: 23px;color:#666;position: relative;text-decoration: none;padding-right: 30px;}
 	.back_top_arrow{top: 2px;position: absolute;width: 10px;right: 9px;height: 10px;border-top: 2px solid #7c7c7c;border-right: 2px solid #7c7c7c;transform: rotate(135deg);}
+	.overlay_menu{background: rgba(0, 0, 0, 0.4);position: fixed;width: 100%;height: 100%;top: 0;left: 0;display: none;}
+	.menu_wrapper{height: 100%;width:0;background: #fff;transition:width 0.6s ease-in-out;position: fixed;left: 0;top:0;}
+	.close_botton{position: absolute;top: 10px;right: 10px;color: #ccc;width: 15px;height: 15px;text-align: center;line-height: 15px;font-size: 12px;cursor: pointer;}
 </style>
 </head>
 <body>
 	<div class="top_banner">
 		<div class="banner_inner">
 			<div class="banner_inner_top">
-				<div class="hamburger">
+				<div class="hamburger" id="hamburger">
 					<div class="hamburger_bar1"></div>
 					<div class="hamburger_bar2"></div>
 					<div class="hamburger_bar3"></div>
@@ -51,13 +56,14 @@
 				<h1 class="banner_title">INSTANT NEWS</h1>
 				<div class="notif_icon"></div>
 			</div>
-			<form class="form1">
-				<input type="text" placeholder="what are you looking for?" class="text_box">
+			<form class="form1" method="post" id="searchfrm">
+				<input type="text" placeholder="what are you looking for?" class="text_box" autocomplete="off" id="s1">
+				<ul class="autolist tt-menu" style="display:none;"></ul>
 				<input type="submit" class="search_icon" value="">
 			</form>
 		</div>
 	</div>
-	<ul class="list_wrapper">
+	<ul class="list_wrapper" id="card-wrapper">
 		<li>
 			<img src="img/img1.jpg">
 			<div class="content_wrapper">
@@ -70,7 +76,7 @@
 					</div>
 				</div>
 				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+				<a class="view_more">View more<span class="back_top_arrow"></span></a>
 			</div>
 		</li>
 		<li>
@@ -85,7 +91,7 @@
 					</div>
 				</div>
 				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+				<a class="view_more">View more<span class="back_top_arrow"></span></a>
 			</div>
 		</li>
 		<li>
@@ -100,7 +106,7 @@
 					</div>
 				</div>
 				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+				<a class="view_more">View more<span class="back_top_arrow"></span></a>
 			</div>
 		</li>
 		<li>
@@ -115,7 +121,7 @@
 					</div>
 				</div>
 				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+				<a class="view_more">View more<span class="back_top_arrow"></span></a>
 			</div>
 		</li>
 		<li>
@@ -130,9 +136,31 @@
 					</div>
 				</div>
 				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+				<a class="view_more">View more<span class="back_top_arrow"></span></a>
 			</div>
 		</li>
 	</ul>
+	<div class="overlay_menu">
+		<div class="menu_wrapper">
+			<span class="close_botton" id="close_botton">x</span>
+		</div>
+	</div>
+	<script type="application/javascript" src="js/app2.js"></script>
+	<script type="application/javascript" src="js/news.js"></script>
+	<script type="text/javascript">
+		var hamburger=document.getElementById('hamburger');
+		var close_botton=document.getElementById('close_botton');
+		hamburger.addEventListener("click",menuOpen);
+		close_botton.addEventListener("click",menuClose);
+		function menuOpen(){
+			document.getElementsByClassName('overlay_menu')[0].style.display="block";
+			document.getElementsByClassName('menu_wrapper')[0].style.width="240px";
+		}
+		function menuClose(){
+			document.getElementsByClassName('menu_wrapper')[0].style.width=0;
+			 setTimeout(function(){ document.getElementsByClassName('overlay_menu')[0].style.display="none"; }, 500);
+			
+		}
+	</script>
 </body>
 </html>
