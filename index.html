@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 10 News</title>
+	<style type="text/css">
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+	body { line-height: 1; }
+	ol, ul { list-style: none; }
+	blockquote, q { quotes: none; }
+	blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+	table { border-collapse: collapse; border-spacing: 0; }
+	body{background: #f1f1f1;font-family: arial,sans-serif;}
+	.top_banner{height:172px;background:#2cb0f1;overflow: hidden;}
+	.banner_inner{margin: 0 12px;}
+	.banner_inner_top{height: 80px;display: flex;align-items: center;}
+	.hamburger{width:28px;height:19px;cursor: pointer;}
+	.hamburger_bar1, .hamburger_bar2, .hamburger_bar3 {height: 3px; background-color: #fff; margin-top: 5px;}
+	.hamburger_bar1{margin-top: 0;}
+	.banner_title{line-height: 80px;text-align: center;font-size:36px;color: #fff;flex: 1;}
+	.notif_icon{width:26px;height:32px;background:url(img/notif_icon.png) no-repeat;cursor: pointer;}
+	.form1{position: relative;}
+	.text_box{height: 60px;padding: 0 70px 0 17px;border-radius: 6px;width: 100%;box-sizing: border-box;border: 0;outline: none;font-size: 20px;color: #8f8f94;background: #fff;}
+	.text_box::-webkit-input-placeholder { color: #8f8f94; }
+	.search_icon{position: absolute;right: 21px;background:url(img/search_icon.png) no-repeat;width: 25px;height: 25px;outline: none;border: 0;cursor: pointer;top: 50%;margin-top: -13px;}
+	.list_wrapper{background: #fff;margin:22px 0;}
+	.list_wrapper li{padding:17px;border-top: 1px solid #f1f1f1;display: flex;}
+	.list_wrapper li:first-child{border: 0;}
+	.list_wrapper li img{width: 170px;height: 170px;border-radius: 6px;overflow: hidden;}
+	.content_wrapper{flex: 1;padding-left: 20px;}
+	.content_header{display: flex;align-items: center;height: 52px;}
+	.category{max-width:174px;height:32px;background:#2cb0f1;line-height:32px;text-align: center;border-radius: 6px;color: #fff;text-transform: uppercase;padding: 0 9px;}
+	.time{flex:1;font-size: 20px;line-height: 25px;color: #999;padding-left: 24px;}
+	.right_panel{width: 87px;}
+	.content_share{float: left;width:24px;height:27px;background: url(img/share_icon.png) no-repeat;cursor: pointer;}
+	.content_bookmark{float: right;width:25px;height:32px;background: url(img/bookmark.png) no-repeat;cursor: pointer;}
+	.news_desc{overflow:hidden;word-wrap: break-word;font-size: 20px;line-height: 25px;max-height: 50px;color: #333;margin: 10px 0;padding-right: 65px;}
+	.view_more{font-size: 18px;line-height: 23px;color:#666;position: relative;text-decoration: none;padding-right: 30px;}
+	.back_top_arrow{top: 2px;position: absolute;width: 10px;right: 9px;height: 10px;border-top: 2px solid #7c7c7c;border-right: 2px solid #7c7c7c;transform: rotate(135deg);}
+</style>
+</head>
+<body>
+	<div class="top_banner">
+		<div class="banner_inner">
+			<div class="banner_inner_top">
+				<div class="hamburger">
+					<div class="hamburger_bar1"></div>
+					<div class="hamburger_bar2"></div>
+					<div class="hamburger_bar3"></div>
+				</div>
+				<h1 class="banner_title">INSTANT NEWS</h1>
+				<div class="notif_icon"></div>
+			</div>
+			<form class="form1">
+				<input type="text" placeholder="what are you looking for?" class="text_box">
+				<input type="submit" class="search_icon" value="">
+			</form>
+		</div>
+	</div>
+	<ul class="list_wrapper">
+		<li>
+			<img src="img/img1.jpg">
+			<div class="content_wrapper">
+				<div class="content_header">
+					<div class="category">politics</div>
+					<div class="time">7hrs ago</div>
+					<div class="right_panel">
+						<div class="content_share"></div>
+						<div class="content_bookmark"></div>
+					</div>
+				</div>
+				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+			</div>
+		</li>
+		<li>
+			<img src="img/img1.jpg">
+			<div class="content_wrapper">
+				<div class="content_header">
+					<div class="category">politics</div>
+					<div class="time">7hrs ago</div>
+					<div class="right_panel">
+						<div class="content_share"></div>
+						<div class="content_bookmark"></div>
+					</div>
+				</div>
+				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+			</div>
+		</li>
+		<li>
+			<img src="img/img1.jpg">
+			<div class="content_wrapper">
+				<div class="content_header">
+					<div class="category">politics</div>
+					<div class="time">7hrs ago</div>
+					<div class="right_panel">
+						<div class="content_share"></div>
+						<div class="content_bookmark"></div>
+					</div>
+				</div>
+				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+			</div>
+		</li>
+		<li>
+			<img src="img/img1.jpg">
+			<div class="content_wrapper">
+				<div class="content_header">
+					<div class="category">politics</div>
+					<div class="time">7hrs ago</div>
+					<div class="right_panel">
+						<div class="content_share"></div>
+						<div class="content_bookmark"></div>
+					</div>
+				</div>
+				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+			</div>
+		</li>
+		<li>
+			<img src="img/img1.jpg">
+			<div class="content_wrapper">
+				<div class="content_header">
+					<div class="category">politics</div>
+					<div class="time">7hrs ago</div>
+					<div class="right_panel">
+						<div class="content_share"></div>
+						<div class="content_bookmark"></div>
+					</div>
+				</div>
+				<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+				<a class="view_more" href="">View more<span class="back_top_arrow"></span></a>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>
