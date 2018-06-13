@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.5 337.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>science-technology</title>
+  <g>
+    <rect class="cls-1" x="112.1" width="89.2" height="21.92" rx="11" ry="11"/>
+    <rect class="cls-1" x="121.1" y="11" width="71.3" height="149.23"/>
+    <path class="cls-1" d="M517.8,446L653.9,643.1c7.9,11.5-2,25.9-17.9,25.9H363.8C348,669,338,654.6,346,643.1L482.1,446C490,434.5,509.8,434.5,517.8,446Z" transform="translate(-343.2 -331.5)"/>
+  </g>
+</svg>

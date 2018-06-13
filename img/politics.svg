@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.6 422.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>politics</title>
+  <g>
+    <g>
+      <rect class="cls-1" x="37.5" y="150" width="35.7" height="226"/>
+      <rect class="cls-1" x="297.3" y="150" width="35.7" height="226"/>
+      <rect class="cls-1" x="210.7" y="150" width="35.7" height="226"/>
+      <rect class="cls-1" x="124.1" y="150" width="35.7" height="226"/>
+    </g>
+    <path class="cls-1" d="M501.2,283.4L684.9,402.3a11.6,11.6,0,0,1-10.1,17.4H327.6a11.6,11.6,0,0,1-10.1-17.4Z" transform="translate(-315.9 -283.4)"/>
+    <rect class="cls-1" x="15.3" y="384.7" width="340" height="21.59"/>
+    <rect class="cls-1" y="400.4" width="370.6" height="22.35"/>
+  </g>
+</svg>

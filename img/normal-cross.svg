@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.4 159.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <title>normal-cross</title>
+  <path class="cls-1" d="M549.5,580l-26.6-35.3c-10.8-13.5-17.7-22.3-24.2-31.5H498a386.9,386.9,0,0,1-22.6,31.7L450.3,580h-31l63.8-80.8-61.3-78.9h31.3l27.6,37.4c7.7,10.4,13.6,18.5,19.2,27h0.9a324.4,324.4,0,0,1,18.9-27l28.5-37.4h31L515.7,498l65.1,82H549.5Z" transform="translate(-419.3 -420.3)"/>
+</svg>

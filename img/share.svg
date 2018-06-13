@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.2 297.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <title>share</title>
+  <g>
+    <polygon class="cls-1" points="55 151.9 29.6 151.9 199.6 37.8 225 37.8 55 151.9"/>
+    <polygon class="cls-1" points="199.6 262.5 225 262.5 55 148.5 29.6 148.5 199.6 262.5"/>
+    <circle class="cls-1" cx="212.3" cy="37.8" r="37.8"/>
+    <circle class="cls-1" cx="216.3" cy="259.9" r="37.8"/>
+    <circle class="cls-1" cx="37.8" cy="151.9" r="37.8"/>
+  </g>
+</svg>

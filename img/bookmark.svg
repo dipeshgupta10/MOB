@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294 416.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+    </style>
+  </defs>
+  <title>bookmark</title>
+  <path class="cls-1" d="M655,722.9L541.3,628.2a8,8,0,0,0-10.3,0L417.3,722.9a8,8,0,0,1-13.2-6.2v-352a26.2,26.2,0,0,1,26.2-26.2H642a26.2,26.2,0,0,1,26.2,26.2v352A8,8,0,0,1,655,722.9Z" transform="translate(-389.2 -323.5)"/>
+</svg>

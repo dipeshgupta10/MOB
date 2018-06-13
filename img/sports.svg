@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.1 392.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>sports</title>
+  <g>
+    <circle class="cls-1" cx="282.7" cy="35.6" r="35.6"/>
+    <rect class="cls-1" x="454.3" y="352.1" width="178.9" height="33.35" rx="16.7" ry="16.7" transform="translate(-47.5 -497.4) rotate(28.4)"/>
+    <rect class="cls-1" x="441.6" y="503.4" width="142.1" height="42.87" rx="21.4" ry="21.4" transform="translate(55.7 -472.5) rotate(31)"/>
+    <rect class="cls-1" x="437.7" y="581.3" width="167.4" height="42.87" rx="21.4" ry="21.4" transform="translate(-557.1 420) rotate(-56.4)"/>
+    <rect class="cls-1" x="286.9" y="563.1" width="131.5" height="42.87" rx="21.4" ry="21.4" transform="translate(-402.6 -196.4) rotate(-12.1)"/>
+    <path class="cls-1" d="M383.7,530.7h68.2a8.7,8.7,0,0,1,8.7,8.7v25.5a8.7,8.7,0,0,1-8.7,8.7H383.7a21.4,21.4,0,0,1-21.4-21.4v0a21.4,21.4,0,0,1,21.4-21.4Z" transform="translate(-564 306.7) rotate(-56.5)"/>
+    <rect class="cls-1" x="370" y="347.9" width="135.5" height="33.35" rx="16.7" ry="16.7" transform="translate(-418.9 48.3) rotate(-36.5)"/>
+    <rect class="cls-1" x="580.4" y="355.1" width="135.5" height="33.35" rx="16.7" ry="16.7" transform="translate(-379.4 194.5) rotate(-38)"/>
+    <path class="cls-1" d="M474.9,360.5h50.7a12,12,0,0,1,12,12V516a12,12,0,0,1-12,12H478.9a16.1,16.1,0,0,1-16.1-16.1V372.5A12,12,0,0,1,474.9,360.5Z" transform="matrix(0.87, 0.5, -0.5, 0.87, 1.23, -473.97)"/>
+  </g>
+</svg>

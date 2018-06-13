@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394.2 475.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>notification</title>
+  <path class="cls-1" d="M666,613V473.3C666,403.1,605.6,346,531.1,346h0.1C456.6,346,395,403.1,395,473.3V613l-46.3,38.8c0,10.5,9.3,19.2,20.4,19.2H693c11.1,0,19.9-8.7,19.9-19.2Z" transform="translate(-333.7 -297.4)"/>
+  <path class="cls-1" d="M499.1,344.1a31.7,31.7,0,0,1,63.3,0" transform="translate(-333.7 -297.4)"/>
+  <path class="cls-2" d="M598.6,705a67.9,67.9,0,0,1-135.8,0" transform="translate(-333.7 -297.4)"/>
+</svg>
