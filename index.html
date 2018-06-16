@@ -62,9 +62,10 @@
 	.menu_icon9 { background: #f1b22c url(img/health.svg) center no-repeat; background-size: auto 25px; }
 	.menu_icon10 { background: #913cfb url(img/entertainment.svg) center no-repeat; background-size: auto 25px; }
 	.menu_type { flex: 1; line-height: 50px; padding-left: 47px; color: #333; font-size: 22px;  }
-
-	
-	
+	.user_tab{height:60px;display: flex;box-shadow: 0px 4px 6.86px 0.14px rgba(0, 0, 0, 0.08);}
+	.tab_links{line-height: 60px;height: 60px;flex: 1;text-align: center;color: #333;font-size: 24px;border: 0;border-bottom: 1px solid #fff;outline: none;background-color: #fff;cursor: pointer;padding: 0;}
+	.active{border-color: #2cb0f1;}
+	#trending-wrapper{display: none;}
 	@media only screen and (max-width: 624px){
 		.banner_inner{margin:0 12px;}
 	}
@@ -89,7 +90,31 @@
 			</form>
 		</div>
 	</div>
+	<div class="user_tab">
+		<button class="tab_links active" onclick="userTab(event,'Home')">Home</button>
+		<button class="tab_links" onclick="userTab(event,'trending')">Trending</button>
+	</div>
 	<ul class="list_wrapper" id="card-wrapper">
+		<li>
+			<div class="column_wrapper">
+				<img src="img/img1.jpg">
+				<div class="content_wrapper">
+					<div class="content_header">
+						<div class="category">politics</div>
+						<div class="time">7hrs ago</div>
+						<div class="right_panel">
+							<div class="content_share"></div>
+							<div class="content_bookmark"></div>
+						</div>
+					</div>
+					<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+					<a class="view_more" id="toggle">View More<span class="back_top_arrow"></span></a>
+				</div>
+			</div>
+			<p class="more_content" id="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
+		</li>
+	</ul>
+	<ul class="list_wrapper" id="trending-wrapper">
 		<li>
 			<div class="column_wrapper">
 				<img src="img/img1.jpg">
@@ -190,6 +215,21 @@
 				}
 			});
 		});
+		function userTab(evt,tabname){
+			var tablinks=document.getElementsByClassName("tab_links");
+			if (tabname=="Home") {
+				evt.currentTarget.className += " active";
+				tablinks[1].className = tablinks[1].className.replace(" active", "");
+				document.getElementById("trending-wrapper").style.display="none"
+				document.getElementById("card-wrapper").style.display="block";
+			}
+			else{
+				evt.currentTarget.className += " active";
+				tablinks[0].className = tablinks[0].className.replace(" active", "");
+				document.getElementById("card-wrapper").style.display="none"
+				document.getElementById("trending-wrapper").style.display="block";
+			}
+		}
 	</script>
 </body>
 </html>
