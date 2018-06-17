@@ -108,10 +108,46 @@
 						</div>
 					</div>
 					<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-					<a class="view_more" id="toggle">View More<span class="back_top_arrow"></span></a>
+					<a class="view_more toggle">View More<span class="back_top_arrow"></span></a>
 				</div>
 			</div>
-			<p class="more_content" id="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
+			<p class="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
+		</li>
+		<li>
+			<div class="column_wrapper">
+				<img src="img/img1.jpg">
+				<div class="content_wrapper">
+					<div class="content_header">
+						<div class="category">politics</div>
+						<div class="time">7hrs ago</div>
+						<div class="right_panel">
+							<div class="content_share"></div>
+							<div class="content_bookmark"></div>
+						</div>
+					</div>
+					<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+					<a class="view_more toggle">View More<span class="back_top_arrow"></span></a>
+				</div>
+			</div>
+			<p class="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
+		</li>
+		<li>
+			<div class="column_wrapper">
+				<img src="img/img1.jpg">
+				<div class="content_wrapper">
+					<div class="content_header">
+						<div class="category">politics</div>
+						<div class="time">7hrs ago</div>
+						<div class="right_panel">
+							<div class="content_share"></div>
+							<div class="content_bookmark"></div>
+						</div>
+					</div>
+					<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+					<a class="view_more toggle">View More<span class="back_top_arrow"></span></a>
+				</div>
+			</div>
+			<p class="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
 		</li>
 	</ul>
 	<ul class="list_wrapper" id="trending-wrapper">
@@ -128,10 +164,10 @@
 						</div>
 					</div>
 					<p class="news_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-					<a class="view_more" id="toggle">View More<span class="back_top_arrow"></span></a>
+					<a class="view_more toggle">View More<span class="back_top_arrow"></span></a>
 				</div>
 			</div>
-			<p class="more_content" id="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
+			<p class="more_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.... <a href="#" class="read_more">Continue Reading</a></p>
 		</li>
 	</ul>
 	<div class="overlay_main" id="overlay_main">
@@ -202,16 +238,17 @@
 			document.getElementById('overlay_main').style.display="none"; 
 		}
 		$(document).ready(function() {
-			$("#toggle").click(function() {
-				var elem = $("#toggle").text();
+			$(".toggle").click(function() {
+				var elemobj=$(this);
+				var elem = elemobj.text();
 				if (elem == "View More") {
-					$("#toggle").text("View Less");
-					$('<span></span>').addClass('back_top_arrow back_top_arrow2').appendTo('#toggle');
-					$("#more_content").slideDown();
+					elemobj.text("View Less");
+					$('<span></span>').addClass('back_top_arrow back_top_arrow2').appendTo(elemobj);
+					elemobj.parentsUntil('ul').find(".more_content").slideDown();
 				} else {
-					$("#toggle").text("View More");
-					$('<span></span>').addClass('back_top_arrow').appendTo('#toggle');
-					$("#more_content").slideUp();
+					elemobj.text("View More");
+					$('<span></span>').addClass('back_top_arrow').appendTo(elemobj);
+					elemobj.parentsUntil('ul').find(".more_content").slideUp();
 				}
 			});
 		});
